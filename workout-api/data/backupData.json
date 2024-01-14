@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user01",
+      "email": "user01@mail.com"
+    },
+    {
+      "id": 2,
+      "username": "user02",
+      "email": "user02@mail.com"
+    }
+  ],
+  "exercises": [
+    {
+      "id": 1,
+      "title": "Object 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "https://placehold.co/600x400"
+    },
+    {
+      "id": 2,
+      "title": "Object 2",
+      "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
+      "image": "https://placehold.co/600x400"
+    },
+    {
+      "id": 3,
+      "title": "Object 3",
+      "description": "Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+      "image": "https://placehold.co/600x400"
+    },
+    {
+      "id": 4,
+      "title": "Object 4",
+      "description": "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
+      "image": "https://placehold.co/600x400"
+    },
+    {
+      "id": 5,
+      "title": "Object 5",
+      "description": "Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh.",
+      "image": "https://placehold.co/600x400"
+    },
+    {
+      "id": 6,
+      "title": "Object 6",
+      "description": "Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat.",
+      "image": "https://placehold.co/600x400"
+    },
+    {
+      "id": 7,
+      "title": "Object 7",
+      "description": "Proin euismod lobortis orci, eu bibendum sapien suscipit vitae.",
+      "image": "https://placehold.co/600x400"
+    },
+    {
+      "id": 8,
+      "title": "Object 8",
+      "description": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.",
+      "image": "https://placehold.co/600x400"
+    },
+    {
+      "id": 9,
+      "title": "Object 9",
+      "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+      "image": "https://placehold.co/600x400"
+    },
+    {
+      "id": 10,
+      "title": "Object 10",
+      "description": "Maecenas sed diam eget risus varius blandit sit amet non magna.",
+      "image": "https://placehold.co/600x400"
+    }
+  ],
+  "session": [
+    {
+      "id": 1,
+      "createdAt": null,
+      "lastUpdatedAt": null,
+      "name": "Session 01",
+      "exercises": []
+    }
+  ]
+}

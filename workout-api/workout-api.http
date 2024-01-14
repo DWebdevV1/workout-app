@@ -1,0 +1,16 @@
+#GET http://localhost:3000/sessions
+GET http://localhost:3000/sessions/1
+#GET http://localhost:3000/exercises
+#GET http://localhost:3000/exercises/1
+#GET http://localhost:3000/users
+#GET http://localhost:3000/users/1
+
+#POST http://localhost:3000/sessions/1/exercises
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "Object 2",
+  "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
+  "image": "https://placehold.co/600x400"
+}
