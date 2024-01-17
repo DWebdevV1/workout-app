@@ -1,6 +1,6 @@
 import express from 'express';
-import {getDataById, getExercisesData} from '../utilities/filebase.js';
-import {successHandler} from '../utilities/status-handler.js';
+import {getDataById, getExercisesData} from '../../utilities/filebase.js';
+import {successHandler} from '../../utilities/status-handler.js';
 
 const router = express.Router();
 

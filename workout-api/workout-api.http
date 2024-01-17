@@ -9,7 +9,7 @@ GET http://localhost:3000/sessions/1
 Content-Type: application/json
 
 {
-  "id": 2,
+  "id": 6674,
   "title": "Object 2",
   "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
   "image": "https://placehold.co/600x400"
