@@ -1,17 +1,10 @@
-enum Categories {
-    CHEST = 'CHEST',
-    BACK = 'BACK',
-    LEGS = 'LEGS',
-    ARMS = 'ARMS',
-    SHOULDERS = 'SHOULDERS',
-    CARDIO = 'CARDIO'
-}
+import {Category} from './Category.ts';
 
 export interface Exercise {
     id?: string | number;
     title: string;
     description: string;
     image: string;
-    category: Categories;
+    category: Category;
 }
 
