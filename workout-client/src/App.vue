@@ -1,9 +1,12 @@
 <script setup lang="ts">
-
+import Header from './components/helpers/header.vue';
 </script>
 
 <template>
-  <h1 class="text-4xl text-blue-400">App Works</h1>
+  <Header></Header>
+  <main class="bg-gray-800 text-white min-h-screen h-[calc(100vh-4rem)] p-5">
+    <router-view></router-view>
+  </main>
 </template>
 
 <style scoped>
