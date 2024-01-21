@@ -4,8 +4,10 @@ import Header from './components/helpers/header.vue';
 
 <template>
   <Header></Header>
-  <main class="bg-gray-800 text-white min-h-screen h-[calc(100vh-4rem)] p-5">
-    <router-view></router-view>
+  <main class="bg-gray-800 text-white min-h-screen py-10">
+    <div class="container mx-auto">
+      <router-view></router-view>
+    </div>
   </main>
 </template>
 

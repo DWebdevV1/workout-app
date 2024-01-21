@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import useExercises from '../../../composables/exercises.ts';
+import Exercise from '../../helpers/Exercise.vue';
 
 const { exercises } = useExercises();
 </script>
 
 <template>
-  <h1>Exercise List works...</h1>
-  <ul>
-    <li v-for="exercise of exercises">{{ exercise }}</li>
-  </ul>
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+    <Exercise v-for="(ex, index) of exercises" :exercise="ex" :key="index"></Exercise>
+  </section>
 </template>
 
 <style scoped>

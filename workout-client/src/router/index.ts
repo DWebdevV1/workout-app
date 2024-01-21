@@ -4,6 +4,7 @@ import Home from '../components/views/home.vue';
 
 import ExerciseList from '../components/views/exercise/exercise-list.vue';
 import WorkoutCreate from '../components/views/workout/workout-create.vue';
+import UserSession from '../components/views/user/user-session.vue';
 import UserProfile from '../components/views/user/user-profile.vue';
 
 const routes = [
@@ -12,6 +13,8 @@ const routes = [
 
     { path: '/workouts', name: 'Workouts', component: WorkoutCreate },
     { path: '/exercises', name: 'Exercises', component: ExerciseList },
+
+    { path: '/session', name: 'UserSession', component: UserSession },
     { path: '/user', name: 'UserProfile', component: UserProfile },
 
     { path: '/:pathMatch(.*)*', redirect: { name: 'Home' } }

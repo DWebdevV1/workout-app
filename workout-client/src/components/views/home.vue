@@ -4,14 +4,14 @@ import Card from '../helpers/card.vue';
 
 <template>
   <section class="grid grid-cols-2 grid-rows-3 gap-5 h-full">
+    <Card title="My Sessions" target="UserSession"></Card>
+    <Card title="My Profile" target="UserProfile"></Card>
+
     <Card title="Create workout program" target="Workouts"></Card>
     <Card title="Explore Exercises" target="Exercises"></Card>
 
-    <Card title="See Profile" target="UserProfile"></Card>
-    <Card title="About Us"></Card>
-
     <Card title="Contact"></Card>
-    <Card title="Help"></Card>
+    <Card title="About Us"></Card>
   </section>
 </template>
 
