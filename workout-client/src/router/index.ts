@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-import Home from '../components/views/home.vue';
+import Home from '../components/views/Home.vue';
 
-import ExerciseList from '../components/views/exercise/exercise-list.vue';
-import WorkoutCreate from '../components/views/workout/workout-create.vue';
-import UserSession from '../components/views/user/user-session.vue';
-import UserProfile from '../components/views/user/user-profile.vue';
+import ExerciseList from '../components/views/exercise/ExerciseList.vue';
+import WorkoutCreate from '../components/views/workout/WorkoutCreate.vue';
+import UserSession from '../components/views/user/UserSession.vue';
+import UserProfile from '../components/views/user/UserProfile.vue';
 
 const routes = [
     { path: '/', redirect: { name: 'Home' } },

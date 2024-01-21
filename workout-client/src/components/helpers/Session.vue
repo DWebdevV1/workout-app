@@ -3,7 +3,9 @@
 </script>
 
 <template>
-  <h1>User Session works...</h1>
+  <div>
+    <h1>session works</h1>
+  </div>
 </template>
 
 <style scoped>
