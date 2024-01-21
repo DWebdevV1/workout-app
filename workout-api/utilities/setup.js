@@ -4,9 +4,9 @@ import morgan from 'morgan';
 
 import { readFromDataJson } from './filebase.js';
 
-import usersRoutes from '../routes/users.js';
-import sessionsRoutes from '../routes/sessions.js';
-import exercisesRoutes from '../routes/exercises.js';
+import usersRoutes from '../routes/users/users.js';
+import sessionsRoutes from '../routes/sessions/sessions.js';
+import exercisesRoutes from '../routes/exercises/exercises.js';
 
 export const app = express();
 export const port = 3000;
