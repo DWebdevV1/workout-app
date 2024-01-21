@@ -1,76 +1,222 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "username": "user01",
-      "email": "user01@mail.com"
-    },
-    {
-      "id": 2,
-      "username": "user02",
-      "email": "user02@mail.com"
-    }
+  "categories": [
+    "CHEST",
+    "BACK",
+    "LEGS",
+    "ARMS",
+    "SHOULDERS",
+    "CARDIO"
   ],
   "exercises": [
     {
       "id": 1,
-      "title": "Object 1",
+      "title": "Exercise 01",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "image": "https://placehold.co/600x400"
+      "image": "https://placehold.co/600x400",
+      "category": "BACK"
     },
     {
       "id": 2,
-      "title": "Object 2",
+      "title": "Exercise 02",
       "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
-      "image": "https://placehold.co/600x400"
+      "image": "https://placehold.co/600x400",
+      "category": "BACK"
     },
     {
       "id": 3,
-      "title": "Object 3",
+      "title": "Exercise 03",
       "description": "Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
-      "image": "https://placehold.co/600x400"
+      "image": "https://placehold.co/600x400",
+      "category": "BACK"
     },
     {
       "id": 4,
-      "title": "Object 4",
+      "title": "Exercise 04",
       "description": "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
-      "image": "https://placehold.co/600x400"
+      "image": "https://placehold.co/600x400",
+      "category": "BACK"
     },
     {
       "id": 5,
-      "title": "Object 5",
+      "title": "Exercise 05",
       "description": "Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh.",
-      "image": "https://placehold.co/600x400"
+      "image": "https://placehold.co/600x400",
+      "category": "BACK"
     },
     {
       "id": 6,
-      "title": "Object 6",
-      "description": "Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat.",
-      "image": "https://placehold.co/600x400"
+      "title": "Exercise 06",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "https://placehold.co/600x400",
+      "category": "CHEST"
     },
     {
       "id": 7,
-      "title": "Object 7",
-      "description": "Proin euismod lobortis orci, eu bibendum sapien suscipit vitae.",
-      "image": "https://placehold.co/600x400"
+      "title": "Exercise 07",
+      "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
+      "image": "https://placehold.co/600x400",
+      "category": "CHEST"
     },
     {
       "id": 8,
-      "title": "Object 8",
-      "description": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.",
-      "image": "https://placehold.co/600x400"
+      "title": "Exercise 08",
+      "description": "Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+      "image": "https://placehold.co/600x400",
+      "category": "CHEST"
     },
     {
       "id": 9,
-      "title": "Object 9",
-      "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
-      "image": "https://placehold.co/600x400"
+      "title": "Exercise 09",
+      "description": "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
+      "image": "https://placehold.co/600x400",
+      "category": "CHEST"
     },
     {
       "id": 10,
-      "title": "Object 10",
-      "description": "Maecenas sed diam eget risus varius blandit sit amet non magna.",
-      "image": "https://placehold.co/600x400"
+      "title": "Exercise 10",
+      "description": "Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh.",
+      "image": "https://placehold.co/600x400",
+      "category": "CHEST"
+    },
+    {
+      "id": 11,
+      "title": "Exercise 11",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "https://placehold.co/600x400",
+      "category": "LEGS"
+    },
+    {
+      "id": 12,
+      "title": "Exercise 12",
+      "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
+      "image": "https://placehold.co/600x400",
+      "category": "LEGS"
+    },
+    {
+      "id": 13,
+      "title": "Exercise 13",
+      "description": "Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+      "image": "https://placehold.co/600x400",
+      "category": "LEGS"
+    },
+    {
+      "id": 14,
+      "title": "Exercise 14",
+      "description": "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
+      "image": "https://placehold.co/600x400",
+      "category": "LEGS"
+    },
+    {
+      "id": 15,
+      "title": "Exercise 15",
+      "description": "Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh.",
+      "image": "https://placehold.co/600x400",
+      "category": "LEGS"
+    },
+    {
+      "id": 16,
+      "title": "Exercise 16",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "https://placehold.co/600x400",
+      "category": "ARMS"
+    },
+    {
+      "id": 17,
+      "title": "Exercise 17",
+      "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
+      "image": "https://placehold.co/600x400",
+      "category": "ARMS"
+    },
+    {
+      "id": 18,
+      "title": "Exercise 18",
+      "description": "Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+      "image": "https://placehold.co/600x400",
+      "category": "ARMS"
+    },
+    {
+      "id": 19,
+      "title": "Exercise 19",
+      "description": "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
+      "image": "https://placehold.co/600x400",
+      "category": "ARMS"
+    },
+    {
+      "id": 20,
+      "title": "Exercise 20",
+      "description": "Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh.",
+      "image": "https://placehold.co/600x400",
+      "category": "ARMS"
+    },
+    {
+      "id": 21,
+      "title": "Exercise 21",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "https://placehold.co/600x400",
+      "category": "SHOULDERS"
+    },
+    {
+      "id": 22,
+      "title": "Exercise 22",
+      "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
+      "image": "https://placehold.co/600x400",
+      "category": "SHOULDERS"
+    },
+    {
+      "id": 23,
+      "title": "Exercise 23",
+      "description": "Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+      "image": "https://placehold.co/600x400",
+      "category": "SHOULDERS"
+    },
+    {
+      "id": 24,
+      "title": "Exercise 24",
+      "description": "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
+      "image": "https://placehold.co/600x400",
+      "category": "SHOULDERS"
+    },
+    {
+      "id": 25,
+      "title": "Exercise 25",
+      "description": "Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh.",
+      "image": "https://placehold.co/600x400",
+      "category": "SHOULDERS"
+    },
+    {
+      "id": 26,
+      "title": "Exercise 26",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "image": "https://placehold.co/600x400",
+      "category": "CARDIO"
+    },
+    {
+      "id": 27,
+      "title": "Exercise 27",
+      "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
+      "image": "https://placehold.co/600x400",
+      "category": "CARDIO"
+    },
+    {
+      "id": 28,
+      "title": "Exercise 28",
+      "description": "Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+      "image": "https://placehold.co/600x400",
+      "category": "CARDIO"
+    },
+    {
+      "id": 29,
+      "title": "Exercise 29",
+      "description": "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.",
+      "image": "https://placehold.co/600x400",
+      "category": "CARDIO"
+    },
+    {
+      "id": 30,
+      "title": "Exercise 30",
+      "description": "Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh.",
+      "image": "https://placehold.co/600x400",
+      "category": "CARDIO"
     }
   ],
   "session": [
