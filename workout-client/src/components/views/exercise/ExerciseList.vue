@@ -6,6 +6,7 @@ const { exercises } = useExercises();
 </script>
 
 <template>
+  <h2 class="text-3xl font-bold mb-5">Exercises</h2>
   <section class="grid grid-cols-1 lg:grid-cols-2 gap-5">
     <Exercise v-for="(ex, index) of exercises" :exercise="ex" :key="index"></Exercise>
   </section>
