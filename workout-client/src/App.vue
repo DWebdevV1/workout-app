@@ -4,7 +4,7 @@ import Header from './components/helpers/Header.vue';
 
 <template>
   <Header></Header>
-  <main class="bg-gray-800 text-white min-h-screen py-10">
+  <main class="bg-gray-800 text-white min-h-screen px-5 py-10">
     <div class="container mx-auto">
       <router-view></router-view>
     </div>

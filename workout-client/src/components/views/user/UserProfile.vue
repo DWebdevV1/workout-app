@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>User Profile works...</h1>
+  <h2 class="text-3xl font-bold mb-5">User Profile</h2>
 </template>
 
 <style scoped>

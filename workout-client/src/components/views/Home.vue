@@ -3,15 +3,12 @@ import Card from '../helpers/Card.vue';
 </script>
 
 <template>
-  <section class="grid grid-cols-2 grid-rows-3 gap-5 h-full">
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-5 h-full">
     <Card title="My Sessions" target="UserSession"></Card>
-    <Card title="My Profile" target="UserProfile"></Card>
-
     <Card title="Create workout program" target="Workouts"></Card>
-    <Card title="Explore Exercises" target="Exercises"></Card>
 
-    <Card title="Contact"></Card>
-    <Card title="About Us"></Card>
+    <Card title="My Profile" target="UserProfile"></Card>
+    <Card title="Explore Exercises" target="Exercises"></Card>
   </section>
 </template>
 
