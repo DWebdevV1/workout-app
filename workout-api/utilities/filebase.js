@@ -35,6 +35,10 @@ export const getExercisesData = () => {
     return dataJson['exercises'];
 }
 
+export const getCategoryData = () => {
+    return dataJson['categories'];
+}
+
 export const getSessionData = () => {
     return dataJson['session'];
 }

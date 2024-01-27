@@ -1,14 +1,28 @@
-import {onMounted, ref} from 'vue';
+import {computed, onMounted, ref, watch} from 'vue';
 import axios from 'axios';
-
-const EXERCISES_URL = import.meta.env.VITE_EXERCISES_URL;
+import {EXERCISES_URL} from '../types/Meta.ts';
 
 export function useExercises() {
     const exercises = ref([]);
+    const filter = ref('');
 
-    const loadExercises = async () => {
+    const filteredExercises = computed(() => exercises.value);
+
+    watch(filter, async (newValue, oldValue) => {
+        if (newValue !== oldValue) {
+            await loadExercises(filter.value);
+        }
+    });
+
+    const loadExercises = async (filter?: string) => {
         try {
-            const { data } = await axios.get(EXERCISES_URL);
+            const params: { category?: string } = {};
+
+            if (filter) {
+                params.category = filter.toLowerCase();
+            }
+
+            const { data } = await axios.get(EXERCISES_URL, { params });
             exercises.value = data;
         } catch (e) {
             console.log(e);
@@ -17,7 +31,7 @@ export function useExercises() {
 
     onMounted(async () => await loadExercises())
 
-    return { exercises }
+    return { filteredExercises, filter }
 }
 
 export default useExercises;

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import FormInput from '../../helpers/FormInput.vue';
+import FormInput from '../../helpers/forms/FormInput.vue';
 </script>
 
 <template>
