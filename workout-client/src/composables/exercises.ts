@@ -4,6 +4,7 @@ import {EXERCISES_URL} from '../types/Meta.ts';
 
 export function useExercises() {
     const exercises = ref([]);
+    const exercisesCounter = ref(0);
     const filter = ref('');
 
     const filteredExercises = computed(() => exercises.value);
@@ -24,6 +25,7 @@ export function useExercises() {
 
             const { data } = await axios.get(EXERCISES_URL, { params });
             exercises.value = data;
+            exercisesCounter.value = exercises.value?.length || 0;
         } catch (e) {
             console.log(e);
         }
@@ -31,7 +33,7 @@ export function useExercises() {
 
     onMounted(async () => await loadExercises())
 
-    return { filteredExercises, filter }
+    return { filteredExercises, exercisesCounter, filter }
 }
 
 export default useExercises;
