@@ -12,8 +12,9 @@ export const handleNewSession = (req, res) => {
 }
 
 export const handleExercisesPost = async (req, res) => {
-    const sessionId = Number(req.params.sessionId);
     try {
+        const sessionId = Number(req.params.sessionId);
+
         if (sessionId && !isNaN(sessionId)) {
             const exerciseData = req.body;
             const sessionData = getSessionData();

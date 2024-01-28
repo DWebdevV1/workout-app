@@ -7,7 +7,7 @@ defineProps<{ exercise: Exercise }>();
 <template>
   <div class="group bg-transparent border-4 border-amber-400 p-5
   hover:cursor-pointer hover:bg-yellow-400 hover:text-black">
-    <p class="mb-5 text-right text-sm font-bold italic">{{ exercise.category }}</p>
+    <p class="mb-5 text-right text-sm font-bold italic tracking-widest">{{ exercise.category }}</p>
     <div class="grid grid-cols-3 gap-5">
       <div class="col-span-1 h-full">
         <img :src="exercise.image" :alt="exercise.title" class="h-full object-contain" />
