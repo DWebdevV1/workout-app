@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {Exercise} from '../../types/Exercise.ts';
+import {Exercise} from '../../types/Exercise';
 
 defineProps<{ exercise: Exercise }>();
 </script>

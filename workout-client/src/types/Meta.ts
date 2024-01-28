@@ -6,4 +6,5 @@ interface ImportMeta {
 const _env = (import.meta as ImportMeta).env;
 
 export const EXERCISES_URL = _env.VITE_EXERCISES_URL;
+export const WORKOUTS_URL = _env.VITE_WORKOUTS_URL;
 export const CATEGORIES_URL = _env.VITE_CATEGORIES_URL;

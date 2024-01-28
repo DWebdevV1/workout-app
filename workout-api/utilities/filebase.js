@@ -28,19 +28,48 @@ export const getDataById = (req, res, getData) => {
 }
 
 export const getUserData = () => {
-    return dataJson['users'];
+    try {
+        return dataJson['users'];
+    } catch {
+        return [];
+    }
 }
 
 export const getExercisesData = () => {
-    return dataJson['exercises'];
+    try {
+        return dataJson['exercises'];
+    } catch {
+        return [];
+    }
 }
 
 export const getCategoryData = () => {
-    return dataJson['categories'];
+    try {
+        return dataJson['categories'];
+    } catch {
+        return [];
+    }
 }
 
 export const getSessionData = () => {
-    return dataJson['session'];
+    try {
+        return dataJson['sessions'];
+    } catch {
+        return [];
+    }
+}
+
+export const getWorkoutData = () => {
+    try {
+        let data = dataJson['workouts'];
+        data = data.map(d => {
+            d.exercisesAmount = d.exercises?.length || 0;
+            return d;
+        });
+        return data;
+    } catch {
+        return [];
+    }
 }
 
 export const setUserData = async (newData) => {
@@ -57,14 +86,19 @@ export const setExercisesData = async (newData) => {
 
 export const setSessionData = async (newData) => {
     const d = getData();
-    d['session'] = newData;
+    d['sessions'] = newData;
+    await writeToDataJson(d);
+}
+
+export const setWorkoutData = async (newData) => {
+    const d = getData();
+    d['workouts'] = newData;
     await writeToDataJson(d);
 }
 
 export const readFromDataJson = async () => {
     try {
         const data = await fs.readFile(_data, 'utf-8');
-
         dataJson = JSON.parse(data);
         console.log('Successfully read from json data file');
     } catch (e) {

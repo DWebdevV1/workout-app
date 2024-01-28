@@ -8,6 +8,7 @@ import usersRoutes from '../routes/users/users.js';
 import sessionsRoutes from '../routes/sessions/sessions.js';
 import exercisesRoutes from '../routes/exercises/exercises.js';
 import categoriesRoutes from '../routes/categories/categories.js';
+import workoutsRoutes from '../routes/workouts/workouts.js';
 
 export const app = express();
 export const port = 3000;
@@ -18,6 +19,7 @@ export const setupRoutes = () => {
     app.use('/users', usersRoutes);
     app.use('/sessions', sessionsRoutes);
     app.use('/exercises', exercisesRoutes);
+    app.use('/workouts', workoutsRoutes);
     app.use('/categories', categoriesRoutes);
 }
 
