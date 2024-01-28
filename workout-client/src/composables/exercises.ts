@@ -1,26 +1,39 @@
 import {computed, onMounted, ref, watch} from 'vue';
 import axios from 'axios';
 import {EXERCISES_URL} from '../types/Meta.ts';
+import {ExerciseFilter} from '../types/Exercise.ts';
 
 export function useExercises() {
     const exercises = ref([]);
     const exercisesCounter = ref(0);
-    const filter = ref('');
+
+    const filterByCategory = ref('');
+    const filterByTitle = ref('');
 
     const filteredExercises = computed(() => exercises.value);
 
-    watch(filter, async (newValue, oldValue) => {
+    watch(filterByCategory, async (newValue, oldValue) => {
         if (newValue !== oldValue) {
-            await loadExercises(filter.value);
+            await loadExercises({ category: filterByCategory.value });
         }
     });
 
-    const loadExercises = async (filter?: string) => {
-        try {
-            const params: { category?: string } = {};
+    watch(filterByTitle, async (newValue, oldValue) => {
+       if (newValue !== oldValue) {
+           await loadExercises({ title: filterByTitle.value });
+       }
+    });
 
-            if (filter) {
-                params.category = filter.toLowerCase();
+    const loadExercises = async (filter?: ExerciseFilter) => {
+        try {
+            const params: ExerciseFilter = {};
+
+            if (filter?.category) {
+                params.category = filter.category.toLowerCase();
+            }
+
+            if (filter?.title) {
+                params.title = filter.title.toLowerCase();
             }
 
             const { data } = await axios.get(EXERCISES_URL, { params });
@@ -33,7 +46,7 @@ export function useExercises() {
 
     onMounted(async () => await loadExercises())
 
-    return { filteredExercises, exercisesCounter, filter }
+    return { filteredExercises, exercisesCounter, filterByCategory, filterByTitle }
 }
 
 export default useExercises;

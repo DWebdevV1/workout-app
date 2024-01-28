@@ -8,3 +8,8 @@ export interface Exercise {
     category: Category;
 }
 
+export interface ExerciseFilter {
+    category?: string;
+    title?: string;
+}
+
