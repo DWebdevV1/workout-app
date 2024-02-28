@@ -1,4 +1,4 @@
-import {Category} from './Category.ts';
+import {Category} from './Category';
 
 export interface Exercise {
     id?: string | number;

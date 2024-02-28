@@ -1,7 +1,7 @@
 import {computed, onMounted, ref, watch} from 'vue';
 import axios from 'axios';
-import {EXERCISES_URL} from '../types/Meta.ts';
-import {ExerciseFilter} from '../types/Exercise.ts';
+import {EXERCISES_URL} from '../types/Meta';
+import {ExerciseFilter} from '../types/Exercise';
 
 export function useExercises() {
     const exercises = ref([]);
@@ -26,20 +26,24 @@ export function useExercises() {
 
     const loadExercises = async (filter?: ExerciseFilter) => {
         try {
+            const categoryFilter = filter?.category?.toLowerCase() || filterByCategory.value;
+            const titleFilter = filter?.title?.toLowerCase() || filterByTitle.value;
+
             const params: ExerciseFilter = {};
 
-            if (filter?.category) {
-                params.category = filter.category.toLowerCase();
+            if (categoryFilter) {
+                params.category = categoryFilter;
             }
 
-            if (filter?.title) {
-                params.title = filter.title.toLowerCase();
+            if (titleFilter) {
+                params.title = titleFilter;
             }
 
             const { data } = await axios.get(EXERCISES_URL, { params });
             exercises.value = data;
             exercisesCounter.value = exercises.value?.length || 0;
         } catch (e) {
+            exercises.value = [];
             console.log(e);
         }
     };

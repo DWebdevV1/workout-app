@@ -219,26 +219,67 @@
       "category": "CARDIO"
     }
   ],
-  "session": [
+  "workouts": [
     {
       "id": 1,
-      "createdAt": null,
-      "lastUpdatedAt": null,
-      "name": "Session 01",
+      "name": "Workout 01",
+      "description": "A workout program to build some muscles",
+      "createdAt": "2023-12-16",
+      "updatedAt": "2023-12-18",
       "exercises": [
         {
-          "id": 667,
-          "title": "Object 2",
-          "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
-          "image": "https://placehold.co/600x400"
+          "id": 1,
+          "title": "Exercise 01",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "image": "https://placehold.co/600x400",
+          "category": "BACK"
         },
         {
-          "id": 6674,
-          "title": "Object 2",
+          "id": 2,
+          "title": "Exercise 02",
           "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
-          "image": "https://placehold.co/600x400"
+          "image": "https://placehold.co/600x400",
+          "category": "BACK"
+        },
+        {
+          "id": 3,
+          "title": "Exercise 03",
+          "description": "Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+          "image": "https://placehold.co/600x400",
+          "category": "BACK"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Workout 02",
+      "description": "A workout program to build some fitness",
+      "createdAt": "2024-01-25",
+      "updatedAt": "2024-02-04",
+      "exercises": [
+        {
+          "id": 1,
+          "title": "Exercise 01",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "image": "https://placehold.co/600x400",
+          "category": "BACK"
+        },
+        {
+          "id": 2,
+          "title": "Exercise 02",
+          "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.",
+          "image": "https://placehold.co/600x400",
+          "category": "BACK"
+        },
+        {
+          "id": 3,
+          "title": "Exercise 03",
+          "description": "Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+          "image": "https://placehold.co/600x400",
+          "category": "BACK"
         }
       ]
     }
-  ]
+  ],
+  "sessions": []
 }

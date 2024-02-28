@@ -1,6 +1,6 @@
 import {onMounted, ref} from 'vue';
 import axios from 'axios';
-import {CATEGORIES_URL} from '../types/Meta.ts';
+import {CATEGORIES_URL} from '../types/Meta';
 
 export function useCategories() {
     let categories = ref([]);
@@ -10,6 +10,7 @@ export function useCategories() {
             const { data } = await axios.get(CATEGORIES_URL);
             categories.value = data;
         } catch (e) {
+            categories.value = [];
             console.log(e);
         }
     };
